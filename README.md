@@ -1,10 +1,15 @@
 # Étude comparative de métaheuristiques pour le problème du voyageur de commerce (TSP)
 
 **Établissement :** Université Hassan II de Casablanca – ENSET Mohammedia
+
 **Master :** SDIA (Systèmes de Données & Intelligence Artificielle) / GESI
+
 **Module :** Optimisation / Métaheuristiques
+
 **Encadrant :** Pr. MESTARI
+
 **Auteurs :** Badr Eddine TOUBANI, Imane MEKKAOUI
+
 **Année universitaire :** 2025–2026
 
 ---
