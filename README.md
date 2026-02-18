@@ -35,6 +35,8 @@ Where:
 
 We utilized three instances of increasing complexity generated in a $[0, 100] \times [0, 100]$ Euclidean space:
 
+<img width="540" height="547" alt="instance_80" src="https://github.com/user-attachments/assets/020f0085-b909-45d6-ad6e-c21d89647afb" />
+
 - Small: $N=20$
 - Medium: $N=50$
 - Large: $N=80$ (used for stress testing stability)
@@ -94,7 +96,11 @@ _*Note: raw SA averages may be higher due to high-temperature exploration; tuned
 ### Visual Analysis
 
 - **Optimal Path Visualization (N=80):** Simulated Annealing successfully "untangles" tours and reduces crossings characteristic of suboptimal solutions.
+  <img width="540" height="547" alt="best_tour_sa_80" src="https://github.com/user-attachments/assets/605ba3a3-b35f-4acd-8d19-90f5c112f8e1" />
 - **Figure 1:** Best tour found by Simulated Annealing for N=80 (Cost ≈ 1712).
+
+  <img width="590" height="390" alt="results_bar_80" src="https://github.com/user-attachments/assets/01cbc994-ca6d-4c6d-b133-aa11d1e6a7ae" />
+
 - **Figure 2:** Average cost comparison for N=80 — Multi-Start improves HC, while SA is the most robust for complex topologies.
 
 ---
@@ -138,9 +144,5 @@ This executes 30 runs per algorithm and produces `tsp_results.csv` in the `asset
 
 ---
 
-## Figures & Additional Notes
 
-- Plots and the best-found tours are saved in `images/`.
-- Parameter tuning for Simulated Annealing (initial temperature, cooling rate, number of iterations per temperature) substantially affects final performance — see `src/algorithms.py` for defaults and tuning options.
 
-If you want, I can (1) commit this updated `README.md`, (2) add the `requirements.txt` file, or (3) run the experiment harness and produce `tsp_results.csv` locally — what would you prefer next?
