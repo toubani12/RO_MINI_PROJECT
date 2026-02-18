@@ -143,7 +143,7 @@ $$
 | MS-HC | Redémarrages aléatoires de HC-FI | ✓✓ | ✓✓ | $\mathcal{O}(k \cdot N^2 \cdot I)$ |
 | Recuit Simulé | Acceptation probabiliste (Metropolis) | ✓✓✓ | ✓ | $\mathcal{O}(N^2 \cdot C_T)$ |
 
-*$I$ = nombre d'itérations HC, $C_T$ = nombre total de cycles de refroidissement.*
+*I = nombre d'itérations HC, C_T = nombre total de cycles de refroidissement.*
 
 ---
 
