@@ -249,17 +249,21 @@ Ce script exécute 30 runs indépendants par algorithme et par instance, puis g�
 ### 5.3 Structure du projet
 
 ```text
-tsp-metaheuristics/
-├── data/               # Génération et chargement des instances TSP
+repo/
+├── data/
+│   ├── __init__.py         # Expose generate_instance(), generate_batch()
+│   └── generator.py        # Génération aléatoire d'instances TSP euclidiennes
 ├── src/
-│   ├── tsp_core.py     # Définition vectorisée du problème (matrice de distances, évaluateur)
-│   ├── algorithms.py   # Implémentation de HC-FI, MS-HC et Recuit Simulé
-│   └── utils.py        # Fonctions utilitaires : visualisation, statistiques, export CSV
-├── images/             # Figures et graphiques générés automatiquement
-├── assets/             # Données brutes (CSV des résultats)
-├── main.py             # Script principal d'orchestration des expériences
-├── requirements.txt    # Dépendances Python
-└── README.md           # Documentation du projet
+│   ├── __init__.py         # Exports publics du package src
+│   ├── tsp_core.py         # TSPInstance : matrice de distances, evaluate(), delta_2opt()
+│   ├── algorithms.py       # HillClimbing, MultiStartHillClimbing, SimulatedAnnealing
+│   └── utils.py            # plot_solution(), plot_comparison_bar(), export_results()
+├── images/                 # Figures et graphiques générés automatiquement
+├── assets/                 # Données brutes (tsp_results.csv)
+├── main.py                 # Script principal d'orchestration des expériences
+├── test_smoke.py           # Tests de fumée (12 tests, exécuter avec python test_smoke.py)
+├── requirements.txt        # Dépendances Python (numpy, matplotlib, pandas, tqdm)
+└── README.md               # Documentation du projet
 ```
 
 ---
