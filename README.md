@@ -96,6 +96,8 @@ _*Note: raw SA averages may be higher due to high-temperature exploration; tuned
 ### Visual Analysis
 
 - **Optimal Path Visualization (N=80):** Simulated Annealing successfully "untangles" tours and reduces crossings characteristic of suboptimal solutions.
+
+  
   <img width="540" height="547" alt="best_tour_sa_80" src="https://github.com/user-attachments/assets/605ba3a3-b35f-4acd-8d19-90f5c112f8e1" />
 - **Figure 1:** Best tour found by Simulated Annealing for N=80 (Cost ≈ 1712).
 
